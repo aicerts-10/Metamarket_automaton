@@ -25,7 +25,7 @@ The workflow begins with a scheduled job, managed by **Celery Beat**, that trigg
 | **Task Queue / Broker** | RabbitMQ | Manages Celery task queues and the custom `raw_data_queue`. |
 | **Task Scheduling** | Celery Beat | Triggering the daily data ingestion process on a recurring schedule. |
 | **Distributed Tasks** | Celery | Managing, routing, and executing all asynchronous workloads. |
-| **Website Crawling** | `requests` + `Beautiful Soup` | Primary method for HTML parsing and content extraction. |
+| **Website Crawling** | `requests` + `Beautiful Soup` or [apify actor](https://apify.com/apify/website-content-crawler) | Primary method for HTML parsing and content extraction. |
 | **Fallback Scraper** | [Firecrawl.dev](https://firecrawl.dev/) | Secondary tool for scraping dynamic (JavaScript) or difficult sites. |
 | **Twitter Data** | Official X API / Apify Actor | Dual options for fetching tweets based on budget and reliability needs. |
 | **AI-Powered Search** | [Perplexity AI](https://www.perplexity.ai/) / [Exa AI](https://exa.ai/) API | High-relevance, keyword-based news discovery. |
